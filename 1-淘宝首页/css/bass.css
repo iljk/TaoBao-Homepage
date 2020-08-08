@@ -1,0 +1,42 @@
+/* 公共样式 */
+
+/* 不让body变得过小（缩小网页），导致溢出 */
+body{
+    min-width: 1190px;
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+    background-color: rgb(245,245,245);
+}
+
+/* 网页两边留边空白 */
+.w{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/* 解决高度塌陷问题 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+    color: #6C6C6C;
+}
+
+/* 下拉框样式 */
+.showstyle{
+    background-color: white;
+    border: 1px solid rgb(238,238,238) !important;
+    border-top: none !important;
+    border-bottom : none !important;
+}
+
+.closestyle{
+    background-color: none;
+    border: 1px solid transparent !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
